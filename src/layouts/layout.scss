@@ -1,0 +1,311 @@
+@import 'src/assets/scss/variable.scss';
+
+.auth-login-button {
+  background: $color-white !important;
+  color: #101010 !important;
+  border-radius: $bRadius !important;
+  font-size: 21px !important;
+  font-family: $authHeaderFont !important;
+  padding: 1.64px 17.9px !important;
+}
+
+.my-option-menu {
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+  .MuiListItemText-primary {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: $authHeaderFont;
+    color: $color-white;
+  }
+}
+
+// Public User Appbar
+.app-bar {
+  .topbar-return-text {
+    cursor: pointer;
+    font-family: $regulerFont;
+    color: $color-light-black;
+    font-weight: bold;
+    font-size: 22.4px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .signin-menu-btn {
+    font-size: 16px;
+    line-height: 21.33px;
+    font-weight: 400;
+    font-family: $authHeaderFont;
+    color: $color-blue;
+    border: 2px solid $color-blue;
+    border-radius: $bRadius;
+    text-transform: inherit;
+    // padding: 0.5px 17.13px;
+    padding: 3.84px 17.13px 3.85px 17.13px;
+  }
+  .MuiToolbar-gutters {
+    min-height: 71px !important;
+    padding: 0;
+    max-width: 1350px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    @media (max-width: 1024px) {
+      padding: 0 32px;
+    }
+  }
+
+  .app-menu-btn {
+    position: relative;
+    margin-left: 50px;
+    @media (min-width: 1600px) {
+      margin-left: 100px;
+    }
+    @media (min-width: 1860px) {
+      margin-left: 129px;
+    }
+  }
+
+  .app-bar-searchbtn {
+    position: relative;
+    padding: 5px;
+    margin-right: 17px;
+    margin-left: 50px;
+    @media (min-width: 1860px) {
+      margin-left: 200px;
+    }
+  }
+
+  .app-bar-notification-btn {
+    position: relative;
+    padding: 5px;
+    margin-left: 8px;
+    .use_profile_tab {
+      position: absolute;
+      top: 35px;
+      right: 4px;
+      background-color: #272a2e;
+      padding: 12px;
+      border-radius: 6px;
+      color: $color-white;
+      text-align: left;
+      min-width: 296px;
+      box-shadow: 0 3px 6px #000;
+      .avatar-section {
+        margin-bottom: 10px;
+      }
+      .popup-avtar {
+        .MuiAvatar-root {
+          margin: 0 !important;
+        }
+      }
+      .create_btn {
+        margin-top: 12px !important;
+        padding: 2.5px 10.5px !important;
+        font-size: 12px !important;
+      }
+      .user-link {
+        font-size: 16px;
+        line-height: 28.45px;
+        font-family: $primaryFont;
+        color: $color-white;
+      }
+      @media (max-width: 375px) {
+        right: -55px;
+      }
+      // @media (max-width: 320px) {
+      //   right: -90px;
+      // }
+    }
+    .app-bar-avtar {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+// Admin User Appbar
+
+.res-logout-app-btn {
+  font-size: 24px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  font-family: $authHeaderFont !important;
+  color: $color-white !important;
+  text-align: center !important;
+}
+
+.admin-app-bar {
+  .app-menu-btn {
+    position: relative;
+    margin-left: 50px;
+    @media (max-width: 1319px) {
+      margin-left: 20px;
+    }
+    @media (min-width: 1320px) and(max-width: 1400px) {
+      margin-left: 30px;
+    }
+    @media (min-width: 1400px) and (max-width: 1480px) {
+      margin-left: 40px;
+    }
+    @media (min-width: 1600px) {
+      margin-left: 60px;
+    }
+    @media (min-width: 1860px) {
+      margin-left: 100px;
+    }
+  }
+  .app-bar-searchbtn {
+    position: relative;
+    padding: 5px;
+    margin-right: 17px;
+    margin-left: 50px;
+    @media (max-width: 1400px) {
+      margin-left: 10px;
+    }
+    @media (min-width: 1400px) and(max-width: 1480px) {
+      margin-left: 40px;
+    }
+    @media (min-width: 1860px) {
+      margin-left: 150px;
+    }
+  }
+
+  .app-bar-notification-btn {
+    position: relative;
+    padding: 5px;
+    margin-right: 12px;
+  }
+}
+
+.logo-anchor {
+  display: flex;
+  align-items: center;
+  .logo-text {
+    color: #ffffff;
+  }
+}
+.link-text {
+  color: $color-white;
+  font-size: 16px;
+  font-family: $latoFont;
+  font-weight: bold;
+}
+.link-text:not(:last-child) {
+  margin-right: 28px;
+}
+.ad-link {
+  font-family: $authHeaderFont;
+  font-size: 18px;
+  line-height: 28.45px;
+  color: $color-white;
+  @media (max-width: 1279px) {
+    padding-right: 10px;
+  }
+}
+.layout-wrapper {
+  display: flex;
+  flex: 1 1 auto;
+  overflow: hidden;
+  // REMOVE VERTICAL SCROLL
+  // ::-webkit-scrollbar {
+  //   display: none;
+  // }
+
+  // /* Width */
+  // ::-webkit-scrollbar {
+  //   width: 4px;
+  // }
+  // /* Track */
+  // ::-webkit-scrollbar-track {
+  //   background: $bg-scroll;
+  //   border-radius: 2px;
+  // }
+  // /* Handle */
+  // ::-webkit-scrollbar-thumb {
+  //   background: $color-blue;
+  //   border-radius: 2px;
+  // }
+  // /* Handle on hover */
+  // ::-webkit-scrollbar-thumb:hover {
+  //   background: $color-blue;
+  // }
+}
+
+// Application Menu Bar
+.menu-bar {
+  background: #000;
+  div {
+    background: #000;
+    @media (max-width: 1279px) {
+      text-align: center;
+      .MuiList-root {
+        display: inline-block;
+      }
+    }
+  }
+  .close-button {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .MuiIconButton-root {
+      padding: 0;
+      color: $color-white;
+    }
+  }
+
+  .MuiButton-label > span {
+    margin-left: auto;
+    font-size: 34px;
+    letter-spacing: 0.5px;
+
+    @media (max-width: 959px) {
+      font-size: 28px;
+    }
+    @media (max-width: 599px) {
+      font-size: 24px;
+    }
+  }
+}
+
+// LEFT MENUS DRAWER
+
+.left-menu-drawer {
+  z-index: 1;
+  background: #272a2e;
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  .post-submenu {
+    padding: 0 0 0 40px;
+    margin: 0px 20px 6px 75px;
+    .MuiListItemText-root {
+      margin: 0;
+    }
+  }
+}
+
+.collapse-text {
+  font-size: 12px !important;
+  color: $color-white;
+}
+// USER PROFILE AVATAR
+.avatar-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 26px;
+  // margin: 0 10px;
+  // padding: 0px 16px;
+  .MuiAvatar-root {
+    margin: 0px 18px;
+    height: 49px;
+    width: 49px;
+    .MuiAvatar-img {
+      object-fit: unset;
+    }
+  }
+}
