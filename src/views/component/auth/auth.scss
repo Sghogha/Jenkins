@@ -1,0 +1,364 @@
+@import 'src/assets/scss/variable.scss';
+
+.auth-section-box {
+  height: 100%;
+  width: 100%;
+  // overflow: auto;
+  margin-top: 71px;
+  // background-color: $color-white;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // height: 100vh;
+  // display: block;
+  // position: fixed;
+  // width: 100%;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  // overflow: auto;
+  // padding-top: 50px;
+
+  // .auth-grid-container {
+  //   display: flex;
+  //   height: 100%;
+  // }
+
+  .auth-left-grid {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // .reg-field {
+    //   max-width: 478px;
+    // }
+    .reg-grid-container {
+      padding: 0 10px 0 32px;
+      @media (max-width: 768px) {
+        padding: 0 32px;
+      }
+      .reg-right-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .res-right-side {
+          .res-right-text {
+            font-family: $regulerFont;
+            font-size: 22.4px;
+            color: $color-gray;
+          }
+          .personal_desc_text {
+            margin: 132px 0 168px 0;
+          }
+          .residence_desc_text {
+            margin: 75px 0 115px 0;
+          }
+        }
+      }
+      .listening-desc {
+        font-family: $regulerFont;
+        font-size: 22.4px;
+      }
+      .user-listing {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 43px;
+        .user-img {
+          height: 50px;
+          width: 50px;
+        }
+      }
+    }
+    .reg-field-grid:not(:last-child) {
+      margin-bottom: 34px;
+    }
+    .create_my_acc_grid {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .bold_font_desc {
+      font-size: 22.4px !important;
+      line-height: 27px !important;
+      font-weight: bold;
+      font-family: $regulerFont !important;
+      color: $color-black !important;
+      margin: 0px !important;
+      padding-top: 9px !important;
+      padding-bottom: 3px !important;
+      position: relative;
+    }
+    .regular_font_desc {
+      font-size: 22.4px !important;
+      line-height: 27px !important;
+      font-family: $regulerFont !important;
+      color: $color-black !important;
+      margin: 0px !important;
+      padding-top: 9px !important;
+      padding-bottom: 3px !important;
+      position: relative;
+    }
+    .list {
+      margin: 26px 0 24px 20px !important;
+    }
+    .reg-textfield {
+      max-width: 478px;
+      @media (max-width: 768px) {
+        max-width: none;
+      }
+    }
+    .mobile-adornment {
+      background: $color-blue !important;
+      color: $color-white;
+      padding: 22px;
+      border-radius: 3px 0 0 3px;
+      margin-left: -13px;
+    }
+    .dob-textfield {
+      max-width: 270px;
+      @media (max-width: 768px) {
+        max-width: none;
+      }
+    }
+    .content {
+      max-width: 1350px;
+      width: 100%;
+      margin: auto;
+      // .MuiGrid-spacing-xs-3 {
+      //   @media (max-width: 599px) {
+      //     width: 100% !important;
+      //     margin: 0px !important;
+      //   }
+      // }
+    }
+    .auth-head {
+      font-family: $regulerFont;
+      font-size: 31.36px;
+      // line-height: 86.05px;
+      text-align: center;
+      margin-top: 56px;
+    }
+    .auth-title-bg {
+      background: $color-light-blue;
+      height: 71px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      border-radius: $bRadius;
+      padding: 0 14px;
+      box-shadow: 0px 3px 7px -5px;
+      margin-bottom: 30px;
+    }
+    .auth-title-bg:not(:first-child) {
+      margin-top: 80px;
+    }
+    .auth-title {
+      font-family: $regulerFont;
+      font-size: 31.36px;
+      font-weight: bold;
+      margin-left: 23px;
+    }
+    .first-divider {
+      margin: 6px auto 5px auto;
+      width: 153.21px;
+    }
+    .second-divider {
+      margin: auto;
+      margin-bottom: 30px;
+      width: 111.64px;
+    }
+    // ERROR BOX
+    .error-box {
+      max-width: 288px;
+      border-radius: 16px;
+      background: $color-orange;
+      padding: 25px;
+      float: right;
+      margin-right: 67px;
+      opacity: 0.6;
+      .error-box-text {
+        font-family: $regulerFont;
+        font-size: 23px;
+        color: $color-white;
+      }
+    }
+    // NO ERROR
+    .no-error-box {
+      background: $color-green;
+    }
+    // AGREEMENT
+    .agreement-section {
+      height: 378px;
+      border: 1px solid $color-gray;
+      border-radius: 15px;
+      padding: 0 28px;
+      border-right: 32px solid $color-blue;
+      box-shadow: 0px 3px 6px -5px;
+      overflow: auto;
+      word-break: break-word;
+      .terms-text {
+        font-weight: 400;
+        line-height: 27px;
+        font-size: 22.4px;
+      }
+    }
+    // TERMS CHECKBOX
+    .terms-checkbox {
+      display: flex;
+      align-items: center;
+      margin-top: 16px;
+      .terms {
+        font-family: $regulerFont;
+        font-weight: 400;
+      }
+      // @media (max-width: 360px) {
+      //   align-items: flex-start;
+      //   text-align: left;
+      //   .MuiButtonBase-root {
+      //     margin-top: -2px;
+      //   }
+      // }
+    }
+    .note-section {
+      background: $color-orange;
+      border-radius: 15px;
+      padding: 5.64px 33px;
+      margin-top: 16px;
+      .note-text {
+        font-family: $regulerFont;
+        font-weight: Bold;
+        font-size: 22.4px;
+        color: $color-white;
+      }
+    }
+    .mobile-field {
+      display: flex;
+      align-items: flex-start;
+    }
+    .otp-textfield {
+      margin-top: 31px;
+    }
+  }
+  .create-btn-section {
+    text-align: center;
+    button {
+      padding: 10px 22.13px !important;
+      margin-bottom: 20px;
+    }
+  }
+  .signup-terms {
+    a {
+      color: $color-black;
+      font-size: 12px;
+      text-decoration: underline;
+    }
+  }
+  .signup-button {
+    padding: 10.5px 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $authHeaderFont;
+    width: 100%;
+    color: $color-black;
+    background: $color-white;
+    border-radius: $bRadius;
+    text-transform: inherit;
+    margin-top: 10.5px;
+    border: 2px solid $color-blue;
+  }
+  .create_my_acc_btn {
+    width: 212px;
+  }
+  .send_code_btn {
+    width: 142px;
+    margin-right: 41px;
+    margin-top: 38px;
+  }
+
+  .quote {
+    margin-top: 36px;
+    font-size: 16px;
+    color: $font-color;
+    text-align: center;
+
+    @media (max-width: 599px) {
+      margin-top: 10px;
+      margin-bottom: 2px;
+    }
+  }
+  .sinup-quote {
+    margin-top: 27px !important;
+  }
+  .sinup-quote:before,
+  .sinup-quote:after {
+    width: 35% !important;
+    @media (max-width: 599px) {
+      width: 31.5% !important;
+    }
+    @media (max-width: 375px) {
+      width: 29% !important;
+    }
+  }
+  .quote:before,
+  .quote:after {
+    background-color: $color-white;
+    content: '';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 45.7%;
+    @media (max-width: 599px) {
+      width: 43%;
+    }
+  }
+
+  .quote span {
+    font-size: 16px;
+    padding: 5px;
+    font-family: $authHeaderFont;
+    @media (max-width: 320px) {
+      font-size: 14px;
+    }
+  }
+
+  .resend-otp-text {
+    margin-top: 27px;
+    position: relative;
+    color: $color-white;
+    font-size: 21px;
+    text-decoration: underline;
+    font-family: $authHeaderFont;
+    cursor: pointer;
+    text-align: center;
+    @media (max-width: 599px) {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  }
+
+  .fancy-link {
+    display: block;
+    margin-top: 28px;
+    margin-bottom: 51px;
+    @media (max-width: 599px) {
+      margin-top: 15px;
+    }
+    .switch_to_signin {
+      background: none;
+      border: none;
+      color: $color-black;
+      font-size: 21.33px;
+      text-decoration: underline;
+      margin-bottom: 7px;
+      font-family: $authHeaderFont;
+      @media (max-width: 599px) {
+        font-size: 16px;
+      }
+      @media (max-width: 320px) {
+        font-size: 14px;
+      }
+    }
+  }
+}

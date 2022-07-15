@@ -1,0 +1,213 @@
+@import 'src/assets/scss/variable.scss';
+
+.welcome-section-box {
+  background: $color-white;
+  height: 100%;
+  .welcome-grid-container {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    // WELCOME LEFT SIDE
+    .welcome-left-side {
+      padding-left: 98px;
+      padding-right: 59.74px;
+      padding-top: 182.7px;
+      @media (max-width: 1600px) {
+        padding-top: 91px;
+      }
+      @media (max-width: 1024px) {
+        padding-left: 40px;
+        padding-right: 30px;
+        padding-top: 10px;
+      }
+      @media (max-width: 768px) {
+        order: 2;
+      }
+      .logo {
+        margin-bottom: 64px;
+        @media (max-width: 1440px) {
+          img {
+            max-width: 400px;
+            @media (max-width: 1024px) {
+              max-width: 350px;
+            }
+            @media (max-width: 375px) {
+              max-width: 250px;
+            }
+          }
+        }
+        @media (max-width: 1024px) {
+          margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+      }
+      .welcome-title {
+        max-width: 550.27px;
+        @media (max-width: 1440px) {
+          max-width: 400px;
+        }
+        @media (max-width: 1024px) {
+          max-width: 350px;
+        }
+        @media (max-width: 768px) {
+          text-align: center;
+          margin: auto;
+        }
+        .title {
+          font-family: $authHeaderFont;
+          font-size: 67px;
+          line-height: 89px;
+          letter-spacing: 0;
+          margin-bottom: 14px;
+          @media (max-width: 1440px) {
+            font-size: 55px;
+            line-height: 75px;
+          }
+          @media (max-width: 1024px) {
+            font-size: 45px;
+            line-height: 60px;
+          }
+          @media (max-width: 768px) {
+            font-size: 35px;
+            line-height: 40px;
+          }
+        }
+      }
+      .welcome-description {
+        margin-bottom: 36px;
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+        .description {
+          font-family: $regulerFont;
+          color: $color-light-black;
+          max-width: 452px;
+          font-size: 22.4px;
+          line-height: 31.36px;
+          letter-spacing: 0;
+          @media (max-width: 1440px) {
+            font-size: 18px;
+            line-height: 25px;
+          }
+          @media (max-width: 1024px) {
+            font-size: 16px;
+          }
+          @media (max-width: 768px) {
+            margin: auto;
+          }
+        }
+      }
+      .welcome-btn {
+        display: flex;
+        @media (max-width: 1024px) {
+          display: inherit;
+        }
+        .individual-btn {
+          margin-right: 9px;
+          padding: 12px 24px !important;
+          @media (max-width: 1440px) {
+            font-size: 16px !important;
+          }
+          @media (max-width: 1024px) {
+            width: 100%;
+            margin-right: auto;
+            margin-bottom: 9px;
+          }
+        }
+        .group-btn {
+          margin-left: 9px;
+          padding: 12px 24px !important;
+          @media (max-width: 1440px) {
+            font-size: 16px !important;
+          }
+          @media (max-width: 1024px) {
+            width: 100%;
+            margin-left: auto;
+            margin-top: 9px;
+          }
+        }
+      }
+      .welcome-already {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        .switch-to-signin {
+          font-family: $regulerFont;
+          display: flex;
+          font-size: 16px;
+          line-height: 20px;
+          @media (max-width: 320px) {
+            font-size: 14px;
+          }
+          a {
+            margin-left: 5px;
+            text-decoration: underline;
+            color: $color-blue;
+          }
+        }
+      }
+    }
+    // WELCOME RIGHT SIDE
+    .welcome-right-side {
+      background-color: $color-white;
+      width: 100%;
+      max-width: calc(100% - 708px);
+      @media (min-width: 2000px) {
+        max-width: 1212px;
+      }
+      @media (max-width: 1440px) {
+        max-width: calc(100% - 595px);
+      }
+      @media (max-width: 1024px) {
+        max-width: calc(100% - 424px);
+      }
+      @media (max-width: 768px) {
+        max-width: calc(100% - 0px);
+        order: 1;
+      }
+      .welcome-banner-slider {
+        .welcome-banner {
+          width: 100%;
+          height: 100%;
+        }
+        .slick-dots {
+          top: 61%;
+          transform: translateY(-50%);
+          right: 4%;
+          width: auto;
+          li {
+            display: list-item;
+            margin: 11px 0;
+            width: auto;
+            height: auto;
+            @media (max-width: 1024px) {
+              margin: 8px 0;
+            }
+          }
+          button {
+            border-radius: 50%;
+            width: 11px;
+            height: 11px;
+            border: none;
+            background-color: $color-white;
+            text-indent: -9999px;
+            outline: 0;
+            @media (max-width: 1024px) {
+              width: 8px;
+              height: 8px;
+              padding: inherit;
+            }
+          }
+          .slick-active {
+            button {
+              background-color: $color-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}

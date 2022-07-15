@@ -1,0 +1,37 @@
+@import url('https://db.onlinewebfonts.com/c/8ac3a2a414b04c47ec7b7cf3a8f2ee0e?family=DIN2014-ExtraBold');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+// Fonts
+$authHeaderFont: DIN2014-ExtraBold;
+$regulerFont: Inter, sans-serif;
+$primaryFont: Roboto, sans-serif;
+$latoFont: Lato;
+$timesnewromanFont: 'Times New Roman';
+
+// Colors
+$color-black: #000000;
+$color-light-black: #191919;
+$color-blue: #4582c3;
+$color-light-blue: #cdedf6;
+$color-white: #ffffff;
+$color-gray: #d4d6d8;
+$color-red: #d84727;
+$color-orange: #e2662c;
+$color-green: #1c9a6c;
+$font-color: #e5e5e5;
+$background-color: #1e2125;
+$divider-color: #2c2f34;
+$field-color: #16181b;
+$tags-color: #1c3d3e;
+
+// Border color
+$field-border: #25282c;
+$blockBorder: 1px solid #2e353a;
+
+// Border Radius
+$bRadius: 3px;
+
+// scroll background color
+$bg-scroll: #353535;

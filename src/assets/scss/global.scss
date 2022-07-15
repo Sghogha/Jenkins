@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import '../scss/variable.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.main-section-box {
+  display: flex;
+  background-color: $color-white;
+  min-height: 1080px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 36px;
+  @media (max-width: 768px) {
+    flex-flow: column;
+    position: relative;
+    min-height: auto;
+  }
+}
+.main-container {
+  font-family: $authHeaderFont;
+  color: $color-black;
+}
+.main-grid-container {
+  max-width: 1088px;
+  margin: auto;
+  padding-bottom: 50px;
+  @media (max-width: 1600px) {
+    max-width: 631px;
+  }
+  @media (max-width: 1024px) {
+    max-width: 500px;
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+// FORM FIELD HELPER TEXT
+.custom-field-helper {
+  font-size: 22.4px !important;
+  line-height: 27px !important;
+  font-weight: 600 !important;
+  font-family: $regulerFont !important;
+  color: $color-black !important;
+  margin: 0px !important;
+  padding-top: 9px !important;
+  padding-bottom: 3px !important;
+  position: relative;
+}
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+.valid_star {
+  color: $color-red;
+  // position: absolute;
+  // top: 6px;
+}
+
+// BUTTONS BACKGROUND
+.btn-blue {
+  color: $color-white !important;
+  text-transform: capitalize !important;
+  background: $color-blue !important;
+  font-family: $regulerFont !important;
+  border: 2px solid $color-blue !important;
+  padding: 10.5px 0px !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 21px !important;
+  letter-spacing: -0 !important;
+  max-height: 45px;
+  border-radius: 3px !important;
+}
+
+.btn-gray {
+  color: $color-white !important;
+  text-transform: capitalize !important;
+  background: linear-gradient(90deg, #dddddd 0%, #b1b1b1 100%) !important;
+  font-family: $regulerFont !important;
+  border: 2px solid $color-white !important;
+  padding: 10.5px 0px !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 21.33px !important;
+  letter-spacing: -0.25px !important;
+  max-height: 45px;
+  border-radius: 6px !important;
+}
+
+.b-btn-blue {
+  color: $color-blue !important;
+  background-color: transparent !important;
+  border: 1px solid $color-blue !important;
+  text-transform: capitalize !important;
+  border-radius: 6px !important;
+  font-size: 18px !important;
+  font-family: $regulerFont !important;
+  &:hover {
+    background-color: $color-blue !important;
+    color: $color-black !important;
+  }
+}
+
+.b-btn-gary {
+  color: $color-gray !important;
+  background-color: transparent !important;
+  border: 1px solid $color-gray !important;
+  text-transform: capitalize !important;
+  border-radius: 6px !important;
+  &:hover {
+    background-color: $color-gray !important;
+    color: $color-black !important;
+  }
+}
+
+.text-btn {
+  text-transform: capitalize !important;
+  padding: 0px !important;
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+.color-blue {
+  color: $color-blue !important;
+}
+.icon-btn {
+  text-transform: capitalize !important;
+}
+
+.btn-height-30 {
+  max-height: 30px !important;
+}
+.btn-width-60 {
+  min-width: 60px !important;
+}
+// NOT FOUND
+.not-found {
+  text-align: center;
+  margin: 20px;
+  .not-found-title {
+    font-family: $authHeaderFont;
+  }
+}
+
+// NUMBER ICON REMOVE
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.MuiSkeleton-root {
+  background: #707070 !important;
+}
+
+.h-45 {
+  height: 45px !important;
+}
+
+// HIDE SHOW STYLE
+.hide-1279 {
+  @media (max-width: 1279px) {
+    display: none !important;
+  }
+}
+
+.hide-959 {
+  @media (max-width: 959px) {
+    display: none !important;
+  }
+}
+
+.show-1279 {
+  display: none !important;
+  @media (max-width: 1279px) {
+    display: inherit !important;
+  }
+}
+.show-959 {
+  display: none !important;
+  @media (max-width: 959px) {
+    display: inherit !important;
+  }
+}
+
+.show-959-flex {
+  display: none !important;
+  @media (max-width: 959px) {
+    display: flex !important;
+  }
+}
+
+// // TITLE
+// .title {
+//   color: $color-black;
+//   font-size: 50.56px !important;
+//   font-family: $authHeaderFont !important;
+//   line-height: 50.56px !important;
+//   margin-bottom: 18px !important;
+//   letter-spacing: -1.26px !important;
+
+//   @media (max-width: 959px) {
+//     font-size: 40px !important;
+//     line-height: 40px !important;
+//   }
+//   @media (max-width: 599px) {
+//     font-size: 35px !important;
+//     line-height: 35px !important;
+//     margin-bottom: 4.5px !important;
+//   }
+//   @media (max-width: 375px) {
+//     font-size: 30px !important;
+//     line-height: 30px !important;
+//   }
+// }
+
+// .admin-title {
+//   margin-bottom: 30px !important;
+// }
+// // DESCRIPTION
+// .description {
+//   margin-bottom: 18px !important;
+//   color: $color-white;
+//   font-size: 16px !important;
+
+//   @media (max-width: 959px) {
+//     font-size: 14px !important;
+//     margin: 12px !important;
+//   }
+//   @media (max-width: 599px) {
+//     margin-bottom: 0px !important;
+//   }
+// }
+
+.sub-desc {
+  font-size: 16px !important;
+  color: $color-white;
+  margin-bottom: 28.5px !important;
+  @media (max-width: 599px) {
+    font-size: 14px !important;
+  }
+}
+.text-field-grid {
+  padding-top: 4.5px !important;
+  padding-bottom: 4.5px !important;
+}
+.field-helper-text {
+  font-family: $regulerFont !important;
+  font-size: 22.4px !important;
+  font-weight: bold !important;
+  color: $color-gray !important;
+}
+.custom-textfield {
+  .MuiOutlinedInput-root {
+    font-family: $regulerFont;
+  }
+}
+// .password-text-field {
+//   .MuiOutlinedInput-inputMarginDense {
+//     border: none;
+//   }
+// }
+
+// TOSTIFY
+.Toastify__toast-container {
+  .Toastify__toast-theme--colored.Toastify__toast--info {
+    background-color: #438ac1;
+  }
+  .Toastify__toast-theme--colored.Toastify__toast--success {
+    background-color: #38c36a;
+  }
+  .Toastify__toast-theme--colored.Toastify__toast--warning {
+    background-color: #f1c40f;
+  }
+  .Toastify__toast-theme--colored.Toastify__toast--error {
+    background-color: #e54b4d;
+  }
+
+  .Toastify__toast-body {
+    padding: 0;
+  }
+  .Toastify__toast {
+    word-break: break-word;
+    div {
+      font-family: $authHeaderFont;
+      font-size: 16px;
+    }
+    .Toastify__close-button {
+      display: none;
+      opacity: 1;
+      color: $color-white;
+      svg {
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+}
+
+// FONT SIZE 12PX
+
+.font-12 {
+  font-size: 12px !important;
+  letter-spacing: -0.25px !important;
+  line-height: 21.33px !important;
+  font-weight: 400 !important;
+}
+
+.font-18 {
+  font-size: 18px !important;
+  letter-spacing: -0.25px !important;
+  line-height: 21.33px !important;
+  font-weight: 400 !important;
+}
+
+.main-content-block {
+  min-height: 100% !important;
+}
+
+// SELECT
+.custom-select {
+  font-family: $regulerFont !important;
+  .MuiSelect-icon {
+    top: auto;
+    color: $color-black;
+    margin-right: 9px;
+  }
+}
+
+.custom-select.Mui-error {
+  border: 1px solid red;
+  border-radius: 3px;
+}
+
+.gender-radio {
+  color: $color-black;
+  .MuiTypography-body1 {
+    font-family: $regulerFont;
+  }
+}
+
+// DIVIDER
+.divider {
+  background-color: $color-light-blue !important;
+  height: 2px !important;
+}
+
+// ERROR
+// .Mui-error {
+//   color: $color-red !important;
+// }
+
+// DISABLED
+
+.Mui-disabled {
+  color: $color-gray !important;
+}
+
+// DROPDOWN LIST
+
+.MuiMenuItem-root {
+  font-family: $regulerFont !important;
+}

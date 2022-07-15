@@ -1,0 +1,256 @@
+@import '../../../assets/scss/variable.scss';
+
+.custom-dialog {
+  margin-top: 51px;
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  .MuiDialog-paper {
+    box-shadow: none;
+    border-radius: 12px;
+    width: 536px;
+    padding: 18px 18px 13px 18px;
+    background-color: #1e2125;
+    box-shadow: 0px 3px 9px #00000029;
+    @media (max-width: 599px) {
+      padding: 15px 12px;
+    }
+    .MuiDialogTitle-root {
+      padding: 0;
+    }
+    .custom-dialog-title {
+      position: relative;
+      .dialog-title {
+        width: 100%;
+        font-size: 37.92px;
+        line-height: 37.92px;
+        color: $color-white;
+        font-family: $authHeaderFont;
+        text-align: center;
+        margin-bottom: 27px;
+        padding-top: 27px;
+        @media (max-width: 599px) {
+          font-size: 26px;
+        }
+        svg {
+          @media (max-width: 599px) {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+      .dialog-close {
+        width: 16.179999px;
+        height: 16.179999px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0;
+        span {
+          height: 16.179999px;
+        }
+      }
+    }
+  }
+}
+
+.dialog-submit-button {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 36px 0 36px;
+  border-top: 1px solid #696969;
+  margin: 0px -36px;
+  margin-top: 12px;
+  @media (max-width: 599px) {
+    padding: 32px 36px 0 36px;
+  }
+
+  .dialog-submit {
+    border-radius: $bRadius;
+    width: 100%;
+    font-size: 21.33px;
+    line-height: 26px;
+    font-family: $authHeaderFont;
+    color: $color-gray;
+    background-color: $color-white;
+  }
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.autocomplete-dropdown-container {
+  .MuiMenuItem-root {
+    white-space: unset;
+  }
+}
+
+// DROPZONE
+
+.dropzone {
+  cursor: pointer;
+  background: $background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed $color-blue;
+  font-size: 16px;
+  line-height: 21.33px;
+  letter-spacing: -0.4px;
+  border-radius: 3px;
+}
+
+.dropzone-title {
+  font-family: $authHeaderFont !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.25px !important;
+  line-height: 21.33px !important;
+  text-align: center;
+}
+
+// CUSTOM AUDIO PLAYER
+.custom-audio-player {
+  margin-bottom: 25px;
+  position: relative;
+  .custom-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .custom-play-pause {
+      .play-pause-btn {
+        width: 60px;
+        height: 60px;
+        color: $color-blue;
+        @media (max-width: 1440px) {
+          width: 50px;
+          height: 50px;
+        }
+        @media (max-width: 425px) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .MuiIconButton-root {
+        padding-left: 0px;
+      }
+    }
+  }
+  .custom-progress-bar {
+    width: 100%;
+    .progress-bar {
+      width: 100%;
+      height: 3px;
+    }
+  }
+  .custom-time-duration {
+    position: absolute;
+    left: 85px;
+    bottom: 0px;
+    @media (max-width: 1440px) {
+      left: 75px;
+    }
+    @media (max-width: 425px) {
+      left: 65px;
+    }
+  }
+}
+// CUSTOM VIDEO PLAYER
+.fullscreen-enabled {
+  .custom-video-player {
+    .custom-player {
+      height: 100vh;
+    }
+  }
+}
+.custom-video-player {
+  position: relative;
+  .custom-player {
+    height: 437px;
+    @media (max-width: 768px) {
+      height: 350px;
+    }
+    @media (max-width: 425px) {
+      height: 200px;
+    }
+    video {
+      width: 100%;
+      height: 437px;
+      object-fit: inherit;
+    }
+  }
+  .custom-video-controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    -moz-box-shadow: inset 0 -60px 70px -50px #000000;
+    -webkit-box-shadow: inset 0 -60px 70px -50px #000000;
+    box-shadow: inset 0 -60px 70px -50px #000000;
+    .custom-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .custom-volume-fullscreen {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .custom-time {
+        .time-duration {
+          font-family: $latoFont;
+          font-size: 15px;
+          @media (max-width: 425px) {
+            font-size: 12px;
+          }
+        }
+      }
+      .MuiIconButton-root {
+        @media (max-width: 425px) {
+          padding: 5px;
+        }
+      }
+    }
+    svg {
+      color: $color-white;
+      @media (max-width: 425px) {
+        height: 12px;
+        width: 12px;
+        &.MuiSvgIcon-root {
+          height: 22px;
+          width: 22px;
+        }
+      }
+    }
+    .skip-ads {
+      position: absolute;
+      right: 0;
+      top: -40px;
+      padding: 5px 10px;
+      border: 1px solid #ffffff;
+      border-right: none;
+      background: #000000;
+      opacity: 0.3;
+      .skip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .skip-icon {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .video-header {
+    position: absolute;
+    top: 0;
+    padding: 16px;
+    width: 100%;
+    .adsHeadline {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+.display-none {
+  display: none;
+}

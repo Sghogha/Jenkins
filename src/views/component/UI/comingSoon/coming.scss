@@ -1,0 +1,29 @@
+@import '../../../../assets/scss/variable.scss';
+
+.comming-soon {
+  position: relative;
+  text-align: center;
+
+  .cmng-title {
+    margin-top: 3px;
+    font-size: 37.92px;
+    line-height: 47px;
+    color: $color-white;
+    font-family: $authHeaderFont;
+    text-align: center;
+    margin-bottom: 19.5px;
+  }
+
+  .cmng-subtxt {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: $primaryFont;
+    color: $color-white;
+  }
+
+  .cmng-insta {
+    margin-top: 25px;
+  }
+}
